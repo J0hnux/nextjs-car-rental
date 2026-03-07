@@ -26,25 +26,41 @@ const LandingPage = () => {
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2 animate-fadeIn">
-              <div className="w-10 h-10 bg-linear-to-br from-blue-900 to-blue-700 rounded-lg flex items-center justify-center">
-                <span className="">E</span>
+              <div className="w-10 h-10 bg-gradient-to-br from-blue-900 to-blue-700 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-xl">E</span>
               </div>
-              <span className="">ELITE</span>
-              <span className="">RENTALS</span>
+              <span className="font-display text-2xl font-bold text-slate-900">
+                ELITE
+              </span>
+              <span className="text-xs tracking-widest text-slate-600 mt-1">
+                RENTALS
+              </span>
             </div>
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#fleet" className="">
+              <a
+                href="#fleet"
+                className="text-slate-700 hover:text-blue-900 transition font-medium"
+              >
                 Fleet
               </a>
-              <a href="#services" className="">
+              <a
+                href="#services"
+                className="text-slate-700 hover:text-blue-900 transition font-medium"
+              >
                 Services
               </a>
-              <a href="#locations" className="">
+              <a
+                href="#locations"
+                className="text-slate-700 hover:text-blue-900 transition font-medium"
+              >
                 Locations
               </a>
-              <a href="#about" className="">
+              <a
+                href="#about"
+                className="text-slate-700 hover:text-blue-900 transition font-medium"
+              >
                 About
               </a>
             </div>
