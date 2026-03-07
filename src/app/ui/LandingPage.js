@@ -64,7 +64,58 @@ const LandingPage = () => {
                 About
               </a>
             </div>
+
+            <div className="hidden md:flex items-center space-x-4">
+              <button className="text-slate-700 hover:text-blue-900 transition flex items-center space-x-2">
+                <User size={20} />
+                <span>Sign In</span>
+              </button>
+              <button className="btn-primary bg-blue-900 text-white px-6 py-2.5 rounded-lg hover:bg-blue-800 font-medium">
+                Book Now
+              </button>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              className="md:hidden text-slate-900"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
           </div>
+
+          {/* Mobile Menu */}
+          {mobileMenuOpen && (
+            <div className="md:hidden mt-4 pb-4 space-y-3 animate-fadeIn">
+              <a
+                href="#fleet"
+                className="block text-slate-700 hover:text-blue-900 py-2"
+              >
+                Fleet
+              </a>
+              <a
+                href="#services"
+                className="block text-slate-700 hover:text-blue-900 py-2"
+              >
+                Services
+              </a>
+              <a
+                href="#locations"
+                className="block text-slate-700 hover:text-blue-900 py-2"
+              >
+                Locations
+              </a>
+              <a
+                href="#about"
+                className="block text-slate-700 hover:text-blue-900 py-2"
+              >
+                About
+              </a>
+              <button className="w-full bg-blue-900 text-white px-6 py-2.5 rounded-lg mt-4">
+                Book Now
+              </button>
+            </div>
+          )}
         </div>
       </nav>
     </div>
