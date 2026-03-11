@@ -15,7 +15,6 @@ import { features } from "../data/features";
 export default function LandingPage() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [selectedCar, setSelectedCar] = useState(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -181,7 +180,11 @@ export default function LandingPage() {
               <div className="w-10 h-10 bg-gradient-to-br from-blue-900 to-blue-700 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl">E</span>
               </div>
-              <span className="font-display text-2xl font-bold text-slate-900">
+              <span
+                className={`font-display text-2xl font-bold text-slate-900 ${
+                  isScrolled ? "text-slate-900" : "text-white"
+                }`}
+              >
                 ELITE
               </span>
               <span className="text-xs tracking-widest text-slate-600 mt-1">
