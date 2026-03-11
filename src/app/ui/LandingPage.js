@@ -10,7 +10,7 @@ import {
   X,
 } from "lucide-react";
 import { cars } from "../data/cars";
-import { features } from "../data/cars";
+import { features } from "../data/features";
 
 export default function LandingPage() {
   const [isScrolled, setIsScrolled] = useState(false);
