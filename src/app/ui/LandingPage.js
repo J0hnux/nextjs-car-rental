@@ -652,7 +652,7 @@ export default function LandingPage() {
 
           <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-slate-400 text-sm mb-4 md:mb-0">
-              © 2024 Elite Rentals. All rights reserved.
+              © 2026 Elite Rentals. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm text-slate-400">
               <a href="#" className="hover:text-amber-400 transition">
